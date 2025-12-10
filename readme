@@ -1,0 +1,23 @@
+# Clusterização de Clientes
+
+Projeto em Python que agrupa clientes em segmentos usando K-Means.
+
+## Como rodar
+1. Instale as dependências:
+   pip install -r requirements.txt
+
+2. Execute:
+   python main.py
+
+## O que o código faz
+- Carrega dados de clientes.
+- Padroniza os valores.
+- Roda o modelo K-Means.
+- Gera o cluster de cada cliente.
+
+## Arquivos
+- main.py
+- clientes.csv
+- requirements.txt
+- README.md
+- .gitignore
