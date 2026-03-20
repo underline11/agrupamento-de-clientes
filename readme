@@ -1,23 +1,24 @@
-# Clusterização de Clientes
+#  Segmentação de Clientes com Machine Learning (K-Means)
 
-Projeto em Python que agrupa clientes em segmentos usando K-Means.
+Este projeto utiliza Aprendizado de Máquina Não Supervisionado para agrupar clientes com base em seu comportamento de consumo, idade e renda. É uma ferramenta ideal para estratégias de marketing direcionado.
 
-## Como rodar
-1. Instale as dependências:
-   pip install -r requirements.txt
+##  Como funciona?
+O algoritmo **K-Means** identifica padrões ocultos nos dados e divide a base de clientes em 3 perfis distintos (Clusters):
+1. **Perfil Econômico:** Clientes mais jovens com menor renda e gastos controlados.
+2. **Perfil Intermediário:** Clientes com renda e gastos moderados.
+3. **Perfil Premium:** Clientes com maior faixa etária, alta renda e alto volume de gastos.
 
-2. Execute:
-   python main.py
+##  Tecnologias Utilizadas
+- **Python 3**
+- **Pandas:** Manipulação e limpeza de dados.
+- **Scikit-learn:** Implementação do modelo de Machine Learning e pré-processamento (StandardScaler).
 
-## O que o código faz
-- Carrega dados de clientes.
-- Padroniza os valores.
-- Roda o modelo K-Means.
-- Gera o cluster de cada cliente.
+##  Conceitos Aplicados
+- **Feature Scaling:** Normalização de dados para garantir que a renda (valores altos) não tenha mais peso que a idade (valores baixos).
+- **Clustering:** Agrupamento por similaridade estatística.
+- **Data Analysis:** Interpretação de resultados de modelos preditivos.
 
-## Arquivos
-- main.py
-- clientes.csv
-- requirements.txt
-- README.md
-- .gitignore
+##  Como Rodar
+1. Instale as dependências: `pip install pandas scikit-learn`
+2. Certifique-se de ter um arquivo `clientes.csv` no diretório ou use o gerador incluso no script.
+3. Execute: `python main.py`
